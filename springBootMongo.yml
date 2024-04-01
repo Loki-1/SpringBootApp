@@ -138,4 +138,5 @@ spec:
     app: mongodb
   ports:
   - port: 27017
-    targetPort: 
+    targetPort: 27017
+    
