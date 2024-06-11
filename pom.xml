@@ -16,6 +16,8 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<spring-boot.version>2.1.5.RELEASE</spring-boot.version>
+                <sonar.java.binaries>target/classes</sonar.java.binaries>
+		<sonar.exclusions>**/*.java</sonar.exclusions>
 		<sonar.host.url>http://3.21.204.124:9000/</sonar.host.url>
 		<sonar.login>squ_a5eb7db37e56b35610212e904930582c63e90010</sonar.login>
 		<spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
@@ -102,6 +104,11 @@
 	</distributionManagement>
 	<build>
 		<plugins>
+		       <plugin>
+                            <groupId>org.sonarsource.scanner.maven</groupId>
+                            <artifactId>sonar-maven-plugin</artifactId>
+                            <version>4.0.0.4121</version>
+                       </plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
