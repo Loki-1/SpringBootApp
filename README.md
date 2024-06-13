@@ -2,14 +2,14 @@
 This project involves creating a Spring Boot application that connects to a database to store user details. The application is deployed using Jenkins pipeline on a Kubernetes cluster.
 
 ### Tools Used
-**Source Code Management:** GitHub
-**Build Tool:** Maven
-**Code Quality Analysis:** SonarQube
-**Artifact Repository:** Nexus
-**Continuous Integration:** Jenkins
-**Containerization:** Docker
-**Container Registry:** Docker Hub
-**Container Orchestration:** Kubernetes
+**Source Code Management:** GitHub, 
+**Build Tool:** Maven, 
+**Code Quality Analysis:** SonarQube, 
+**Artifact Repository:** Nexus, 
+**Continuous Integration:** Jenkins, 
+**Containerization:** Docker, 
+**Container Registry:** Docker Hub, 
+**Container Orchestration:** Kubernetes, 
 
 ### Architecture
 
