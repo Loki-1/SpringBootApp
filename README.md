@@ -16,6 +16,7 @@ This project involves creating a Spring Boot application that connects to a data
 
 #### Application Components:
 **Spring Boot Application:** Handles user input and interacts with the database.
+
 **Database (e.g., MySQL, PostgreSQL):** Stores user information.
 
 #### Deployment Architecture:
