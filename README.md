@@ -1,6 +1,6 @@
 ## Overview
 This project involves creating a Spring Boot application that connects to a database to store user details. The application is deployed using Jenkins pipeline on a Kubernetes cluster.
-
+![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/336fd659-b823-4141-86e0-cc6645a3ca22)
 ### Tools Used
 **Source Code Management:** GitHub, 
 **Build Tool:** Maven, 
@@ -10,6 +10,7 @@ This project involves creating a Spring Boot application that connects to a data
 **Containerization:** Docker, 
 **Container Registry:** Docker Hub, 
 **Container Orchestration:** Kubernetes, 
+![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/da0df3ec-e3ad-42ca-8c4d-5d1ee6a76708)
 
 ### Architecture
 
