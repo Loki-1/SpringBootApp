@@ -29,8 +29,7 @@ This project involves creating a Spring Boot application that connects to a data
 
 **Services:**
 To expose the Spring Boot application internally or externally.
-
-**External url :** http://<local_host>:<NodePort_num>/
+         **External url :** http://<local_host>:<NodePort_num>/
 
 
 ### Development Workflow
