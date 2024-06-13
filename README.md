@@ -22,9 +22,11 @@ This project involves creating a Spring Boot application that connects to a data
 #### Deployment Architecture:
 
 **Kubernetes Cluster:** Orchestrates containers.
+
 **Pods:**
 * One for the database (e.g., MySQL, PostgreSQL).
 * One for the Spring Boot application.
+
 **Services:**
 To expose the Spring Boot application internally or externally.
 
