@@ -12,12 +12,11 @@ This project involves creating a Spring Boot application that connects to a data
 **Container Orchestration:** Kubernetes.
 ![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/da0df3ec-e3ad-42ca-8c4d-5d1ee6a76708)
 
-### Architecture
-
 ### Application Components:
 **Spring Boot Application:** Handles user input and interacts with the database.
 
 **Database (e.g., MySQL, PostgreSQL):** Stores user information.
+
 
 ### Deployment Architecture:
 
@@ -30,6 +29,7 @@ This project involves creating a Spring Boot application that connects to a data
 ***Services:***
 To expose the Spring Boot application internally or externally.
          **External url :** http://<local_host>:<NodePort_num>/
+
 
 
 ### Development Workflow
