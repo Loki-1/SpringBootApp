@@ -18,6 +18,8 @@ This project involves creating a Spring Boot application that connects to a data
 **Database (e.g., MySQL, PostgreSQL):** Stores user information.
 
 
+
+
 ### Deployment Architecture:
 
 **Kubernetes Cluster:** Orchestrates containers.
@@ -29,6 +31,9 @@ This project involves creating a Spring Boot application that connects to a data
 ***Services:***
 To expose the Spring Boot application internally or externally.
          **External url :** http://<local_host>:<NodePort_num>/
+
+
+
 
 
 
