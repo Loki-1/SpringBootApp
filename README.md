@@ -70,27 +70,27 @@ Dockerfiles define the container images and we store those images on dockerhub.
 ![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/bf15e7b5-01fa-4996-94b1-38cbf02d1423)
 
 ### Prerequisites:
--Kubernetes cluster setup.
--Jenkins installation and configuration.
--Docker and Docker Hub accounts.
+- Kubernetes cluster setup.
+- Jenkins installation and configuration.
+- Docker and Docker Hub accounts.
 
 ### Configuration Files:
--pom.xml: Maven build configuration.
--Dockerfile: Docker image configuration.
--Jenkinsfile: Jenkins pipeline groovy script
--**Kubernetes Manifests:**
--deployment.yaml: Deployment configuration.
--service.yaml: Service configuration.
+- `pom.xml`: Maven build configuration.
+- `Dockerfile`: Docker image configuration.
+- `Jenkinsfile`: Jenkins pipeline groovy script
+- **Kubernetes Manifests:**
+  - `deployment.yaml`: Deployment configuration.
+  - `service.yaml`: Service configuration.
 
 ### Troubleshooting and Monitoring
--**Logging:**
--Utilize Kubernetes logging (e.g., Fluentd, Elasticsearch, Kibana stack).
--**Monitoring:**
--Use Kubernetes monitoring tools (e.g., Prometheus, Grafana).
+- **Logging:**
+  - Utilize Kubernetes logging (e.g., Fluentd, Elasticsearch, Kibana stack).
+- **Monitoring:**
+  - Use Kubernetes monitoring tools (e.g., Prometheus, Grafana).
 
 ### Future Improvements
--Implement CI/CD pipelines for feature branches.
--Enhance Kubernetes deployment with Helm charts.
--Integrate automated testing (unit, integration, E2E).
+- Implement CI/CD pipelines for feature branches.
+- Enhance Kubernetes deployment with Helm charts.
+- Integrate automated testing (unit, integration, E2E).
 
 
