@@ -10,6 +10,7 @@ This project involves creating a Spring Boot application that connects to a data
 **Containerization:** Docker, 
 **Container Registry:** Docker Hub, 
 **Container Orchestration:** Kubernetes.
+
 ![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/da0df3ec-e3ad-42ca-8c4d-5d1ee6a76708)
 ![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/c5850db8-4ea8-4e3b-bec0-8d194f4c661f)
 
