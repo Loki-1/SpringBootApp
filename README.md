@@ -44,18 +44,15 @@ Code is managed in GitHub repositories.
 Maven is used to build packages (pom.xml manages dependencies and build configurations).
 
 #### Code Quality Analysis:
-
 SonarQube is integrated to analyze code quality and identify issues.
 ![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/6a38b2c6-a1d1-4cc9-ae84-91dd4b76c16d)
 ![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/8b18a98e-b7b2-4d89-99d3-33b9eac5bc7d)
 
 #### Artifact Repository:
-
 Nexus serves as the artifact repository for storing Maven packages.
 ![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/d65f9747-90e5-49c0-8c12-4a394538ae1c)
 
 #### Continuous Integration:
-
 Jenkins pipeline automates the CI/CD process.
 **Stages:**
 Build: Maven builds the application.
@@ -71,19 +68,6 @@ Kubernetes Deployment: Deploy to Kubernetes cluster.
 Docker is used to containerize the application.
 Dockerfiles define the container images and we store those images on dockerhub.
 ![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/bf15e7b5-01fa-4996-94b1-38cbf02d1423)
-
-
-#### Deployment to Kubernetes:
-Jenkins pipeline manages deployment to Kubernetes.
-Kubernetes manifests (deployment.yaml, service.yaml) define resources and configurations.
-Deployment Process
-**Jenkins Pipeline:**
-Triggered on code push to GitHub or manually.
-Builds the application using Maven.
-Runs SonarQube analysis for code quality.
-Builds Docker image and pushes to Docker Hub.
-Deploys application to Kubernetes cluster using Kubernetes manifests.
-Setup and Configuration
 
 ### Prerequisites:
 Kubernetes cluster setup.
