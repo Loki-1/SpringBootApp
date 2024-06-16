@@ -1,39 +1,87 @@
-node{
-     
-    stage('SCM Checkout'){
-        git credentialsId: 'GIT_CREDENTIALS', url:  'https://github.com/MithunTechnologiesDevOps/spring-boot-mongo-docker.git',branch: 'master'
-    }
-    
-    stage(" Maven Clean Package"){
-      def mavenHome =  tool name: "Maven-3.6.1", type: "maven"
-      def mavenCMD = "${mavenHome}/bin/mvn"
-      sh "${mavenCMD} clean package"
-      
-    } 
-    
-    
-    stage('Build Docker Image'){
-        sh 'docker build -t dockerhandson/spring-boot-mongo .'
-    }
-    
-    stage('Push Docker Image'){
-        withCredentials([string(credentialsId: 'DOKCER_HUB_PASSWORD', variable: 'DOKCER_HUB_PASSWORD')]) {
-          sh "docker login -u dockerhandson -p ${DOKCER_HUB_PASSWORD}"
+pipeline{
+agent any
+tools
+{
+maven 'maven_3.6.1'
+}
+environment {
+        // Define environment variables if needed
+        DOCKER_REGISTRY = 'lokeshnagam121'
+        dockerImage = 'lokeshnagam121/springboot'
+        IMAGE_TAG = 'latest'
+        registryCredential ='dockerhub'
+}
+stages
+{
+stage('Checkout Code from GitHub')
+  {
+        steps{git credentialsId: 'git', url: 'https://github.com/Loki-1/SpringBootApp.git'}
+  }
+stage('Build WAR File with Maven')
+  {
+  steps
+  {
+  sh  "mvn clean package"
+  }
+  }
+stage('Executing SonarQube Report')
+  {
+  steps
+  {
+  sh  "mvn sonar:sonar"
+  }
+  }
+  stage('Uploading Artifacts Into Nexus Repo')
+  {
+  steps
+   {
+  sh  "mvn deploy"
+   }
+  }
+stage('Build Docker Image') {
+            steps {
+                // Build your Docker image
+                script {
+                     // Build your Docker image
+                    sh 'docker build -t lokeshnagam121/springboot .'
+                }
+            }
         }
-        sh 'docker push dockerhandson/spring-boot-mongo'
-     }
-     
-     stage("Deploy To Kuberates Cluster"){
-       kubernetesDeploy(
-         configs: 'springBootMongo.yml', 
-         kubeconfigId: 'KUBERNATES_CONFIG',
-         enableConfigSubstitution: true
-        )
-     }
-	 
-	  /**
-      stage("Deploy To Kuberates Cluster"){
-        sh 'kubectl apply -f springBootMongo.yml'
-      } **/
-     
+stage('Push Docker Image to Docker Hub') {
+            steps {
+                script {
+                    // Push the Docker image to the registry
+                    docker.withRegistry('', registryCredential) {
+                        docker.image("${dockerImage}:${IMAGE_TAG}").push()
+                    }
+                }
+            }
+        }
+stage('Deploy Application on kubernetes cluster') {
+            steps {
+                withKubeConfig(caCertificate: '', clusterName: '', contextName: '', credentialsId: 'k8-token', namespace: 'test-ns', restrictKubeConfigAccess: false, serverUrl: 'https://172.31.23.196:6443') {
+                sh "kubectl apply -f springboot-with-mongo.yaml -n test-ns"
+                sh "kubectl get svc -n test-ns"
+                }
+            }
+        }
+}
+post {
+            always {
+                emailext (
+                    subject: "Pipeline Status: ${BUILD_NUMBER}",
+                    body: '''<html>
+                                <body>
+                                    <p>Build Status: ${BUILD_STATUS}</p>
+                                    <p>Build Number: ${BUILD_NUMBER}</p>
+                                    <p>Check the <a href="${BUILD_URL}">console output</a>.</p>
+                                </body>
+                            </html>''',
+                    to: 'lokesh.naagam@gmail.com,naagam.lokesh@gmail.com',
+                    from: 'jenkins@example.com',
+                    replyTo: 'jenkins@example.com',
+                    mimeType: 'text/html'
+                )
+            }
+        }
 }
