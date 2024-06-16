@@ -91,13 +91,13 @@
 	
 	    <repository>
 	      <id>nexus</id>
-	      <name>Maven-webapp</name>
-	      <url>http://3.21.204.124:8081/repository/springboot/</url>
+	      <name>SpringBoot-with-database</name>
+	      <url>http://13.59.196.168:8081/repository/SpringBoot-with-database/</url>
 	    </repository>
 	    
 	  <!--  <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Maven-webapp-snapshot</name>
+	      <name>SpringBoot-with-database-snapshot</name>
 	      <url>http://3.138.136.211:9090/repository/Maven-webapp-snapshot/</url>
 	    </snapshotRepository>-->
 	    
