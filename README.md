@@ -11,6 +11,7 @@ This project involves creating a Spring Boot application that connects to a data
 **Container Registry:** Docker Hub, 
 **Container Orchestration:** Kubernetes.
 ![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/da0df3ec-e3ad-42ca-8c4d-5d1ee6a76708)
+![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/c5850db8-4ea8-4e3b-bec0-8d194f4c661f)
 
 ### Application Components:
 **Spring Boot Application:** Handles user input and interacts with the database.
@@ -32,6 +33,9 @@ This project involves creating a Spring Boot application that connects to a data
 To expose the Spring Boot application internally or externally.
          **External url :** http://<local_host>:<NodePort_num>/
 
+![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/988338b5-ed31-4980-a2bb-a6eb7c6ec15b)
+![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/683110c3-0d48-4641-a920-5a4e01e569ef)
+
 
 
 
@@ -47,9 +51,16 @@ Maven is used to build packages (pom.xml manages dependencies and build configur
 Code Quality Analysis:
 
 SonarQube is integrated to analyze code quality and identify issues.
+![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/6a38b2c6-a1d1-4cc9-ae84-91dd4b76c16d)
+![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/8b18a98e-b7b2-4d89-99d3-33b9eac5bc7d)
+
+
 Artifact Repository:
 
 Nexus serves as the artifact repository for storing Maven packages.
+![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/d65f9747-90e5-49c0-8c12-4a394538ae1c)
+
+
 Continuous Integration:
 
 Jenkins pipeline automates the CI/CD process.
@@ -103,6 +114,7 @@ GitHub repository link.
 Jenkins pipeline scripts.
 Kubernetes manifests.
 
+![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/8fe8411c-e833-46b3-af7e-3eb55b1284d4)
 
 ![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/c52a215d-0ca5-4a0d-9216-61708cf944a3)
 
