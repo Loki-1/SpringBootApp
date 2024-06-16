@@ -33,9 +33,8 @@ This project involves creating a Spring Boot application that connects to a data
 * One for the Spring Boot application.
 
 ***Services:***
-To expose the Spring Boot application internally or externally.
-         **External url :** http://<local_host>:<NodePort_num>/
-
+- To expose the Spring Boot application internally or externally.
+- **External url :** [http://localhost:<node_port>/](http://localhost:<node_port>/)
 ![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/988338b5-ed31-4980-a2bb-a6eb7c6ec15b)
 
 ### Development Workflow
