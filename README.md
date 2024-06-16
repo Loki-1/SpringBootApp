@@ -4,14 +4,14 @@ This project involves creating a Spring Boot application that connects to a data
 ![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/336fd659-b823-4141-86e0-cc6645a3ca22)
 
 ### Tools Used
-**Source Code Management:** GitHub, 
-**Build Tool:** Maven, 
-**Code Quality Analysis:** SonarQube, 
-**Artifact Repository:** Nexus, 
-**Continuous Integration:** Jenkins, 
-**Containerization:** Docker, 
-**Container Registry:** Docker Hub, 
-**Container Orchestration:** Kubernetes.
+-**Source Code Management:** GitHub
+-**Build Tool:** Maven
+-**Code Quality Analysis:** SonarQube
+-**Artifact Repository:** Nexus
+-**Continuous Integration:** Jenkins
+-**Containerization:** Docker
+-**Container Registry:** DockerHub
+-**Container Orchestration:** Kubernetes.
 
 ![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/cefaa304-280b-4357-9867-052ad3200783)
 
@@ -70,27 +70,27 @@ Dockerfiles define the container images and we store those images on dockerhub.
 ![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/bf15e7b5-01fa-4996-94b1-38cbf02d1423)
 
 ### Prerequisites:
-Kubernetes cluster setup.
-Jenkins installation and configuration.
-Docker and Docker Hub accounts.
+-Kubernetes cluster setup.
+-Jenkins installation and configuration.
+-Docker and Docker Hub accounts.
 
 ### Configuration Files:
-pom.xml: Maven build configuration.
-Dockerfile: Docker image configuration.
-Jenkinsfile: Jenkins pipeline groovy script
-**Kubernetes Manifests:**
-deployment.yaml: Deployment configuration.
-service.yaml: Service configuration.
+-pom.xml: Maven build configuration.
+-Dockerfile: Docker image configuration.
+-Jenkinsfile: Jenkins pipeline groovy script
+-**Kubernetes Manifests:**
+-deployment.yaml: Deployment configuration.
+-service.yaml: Service configuration.
 
 ### Troubleshooting and Monitoring
-**Logging:**
-Utilize Kubernetes logging (e.g., Fluentd, Elasticsearch, Kibana stack).
-**Monitoring:**
-Use Kubernetes monitoring tools (e.g., Prometheus, Grafana).
+-**Logging:**
+-Utilize Kubernetes logging (e.g., Fluentd, Elasticsearch, Kibana stack).
+-**Monitoring:**
+-Use Kubernetes monitoring tools (e.g., Prometheus, Grafana).
 
 ### Future Improvements
-Implement CI/CD pipelines for feature branches.
-Enhance Kubernetes deployment with Helm charts.
-Integrate automated testing (unit, integration, E2E).
+-Implement CI/CD pipelines for feature branches.
+-Enhance Kubernetes deployment with Helm charts.
+-Integrate automated testing (unit, integration, E2E).
 
 
