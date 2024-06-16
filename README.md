@@ -67,51 +67,48 @@ Kubernetes Deployment: Deploy to Kubernetes cluster.
 ![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/683110c3-0d48-4641-a920-5a4e01e569ef)
 
 #### Containerization:
-
 Docker is used to containerize the application.
 Dockerfiles define the container images and we store those images on dockerhub.
+![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/bf15e7b5-01fa-4996-94b1-38cbf02d1423)
 
-![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/683110c3-0d48-4641-a920-5a4e01e569ef)
 
 #### Deployment to Kubernetes:
-
 Jenkins pipeline manages deployment to Kubernetes.
 Kubernetes manifests (deployment.yaml, service.yaml) define resources and configurations.
 Deployment Process
-Jenkins Pipeline:
+**Jenkins Pipeline:**
 Triggered on code push to GitHub or manually.
 Builds the application using Maven.
 Runs SonarQube analysis for code quality.
 Builds Docker image and pushes to Docker Hub.
 Deploys application to Kubernetes cluster using Kubernetes manifests.
 Setup and Configuration
-Prerequisites:
 
+### Prerequisites:
 Kubernetes cluster setup.
 Jenkins installation and configuration.
 Docker and Docker Hub accounts.
-Configuration Files:
 
+### Configuration Files:
 pom.xml: Maven build configuration.
 Dockerfile: Docker image configuration.
-Kubernetes Manifests:
+Jenkinsfile: Jenkins pipeline groovy script
+**Kubernetes Manifests:**
 deployment.yaml: Deployment configuration.
 service.yaml: Service configuration.
-Troubleshooting and Monitoring
-Logging:
 
+### Troubleshooting and Monitoring
+**Logging:**
 Utilize Kubernetes logging (e.g., Fluentd, Elasticsearch, Kibana stack).
-Monitoring:
-
+**Monitoring:**
 Use Kubernetes monitoring tools (e.g., Prometheus, Grafana).
-Future Improvements
+
+### Future Improvements
 Implement CI/CD pipelines for feature branches.
 Enhance Kubernetes deployment with Helm charts.
 Integrate automated testing (unit, integration, E2E).
-References
-GitHub repository link.
-Jenkins pipeline scripts.
-Kubernetes manifests.
+
+
 
 ![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/8fe8411c-e833-46b3-af7e-3eb55b1284d4)
 
