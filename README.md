@@ -13,7 +13,8 @@ This project involves creating a Spring Boot application that connects to a data
 **Container Registry:** Docker Hub, 
 **Container Orchestration:** Kubernetes.
 
-![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/da0df3ec-e3ad-42ca-8c4d-5d1ee6a76708)
+![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/cefaa304-280b-4357-9867-052ad3200783)
+
 
 
 ### Application Components:
@@ -108,11 +109,4 @@ Implement CI/CD pipelines for feature branches.
 Enhance Kubernetes deployment with Helm charts.
 Integrate automated testing (unit, integration, E2E).
 
-
-
-![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/8fe8411c-e833-46b3-af7e-3eb55b1284d4)
-
-![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/c52a215d-0ca5-4a0d-9216-61708cf944a3)
-
-![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/336fd659-b823-4141-86e0-cc6645a3ca22)
 
