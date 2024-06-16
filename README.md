@@ -4,14 +4,15 @@ This project involves creating a Spring Boot application that connects to a data
 ![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/336fd659-b823-4141-86e0-cc6645a3ca22)
 
 ### Tools Used
--**Source Code Management:** GitHub
--**Build Tool:** Maven
--**Code Quality Analysis:** SonarQube
--**Artifact Repository:** Nexus
--**Continuous Integration:** Jenkins
--**Containerization:** Docker
--**Container Registry:** DockerHub
--**Container Orchestration:** Kubernetes.
+- **Source Code Management:** GitHub
+- **Build Tool:** Maven
+- **Code Quality Analysis:** SonarQube
+- **Artifact Repository:** Nexus
+- **Continuous Integration:** Jenkins
+- **Containerization:** Docker
+- **Container Registry:** DockerHub
+- **Container Orchestration:** Kubernetes
+
 
 ![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/cefaa304-280b-4357-9867-052ad3200783)
 
