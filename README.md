@@ -71,6 +71,13 @@ Docker is used to containerize the application.
 Dockerfiles define the container images and we store those images on dockerhub.
 ![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/bf15e7b5-01fa-4996-94b1-38cbf02d1423)
 
+#### Post-build Actions
+Email Notification: Sends an email with build status and links to Jenkins console output.
+
+![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/f50c9527-1d0e-4e36-ae9a-461d25a8b46c)
+When we click on the console output link, we will be redirected to the Jenkins console output page.
+![image](https://github.com/Loki-1/SpringBootApp/assets/134843197/8c5bdafd-69ae-49ba-a4d7-8cb71c71b761)
+
 ### Prerequisites:
 - Kubernetes cluster setup.
 - Jenkins installation and configuration.
