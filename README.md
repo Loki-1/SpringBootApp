@@ -95,7 +95,7 @@ When we click on the console output link, we will be redirected to the Jenkins c
 - **Logging:**
   - Utilize Kubernetes logging (e.g., Fluentd, Elasticsearch, Kibana stack).
 - **Monitoring:**
-  - Use Kubernetes monitoring tools (e.g., Prometheus, Grafana).
+  - Use Kubernetes monitoring tools (e.g., Prometheus, Grafana)
 
 ### Future Improvements
 - Implement CI/CD pipelines for feature branches.
