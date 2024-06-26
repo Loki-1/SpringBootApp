@@ -98,7 +98,7 @@ When we click on the console output link, we will be redirected to the Jenkins c
   - Use Kubernetes monitoring tools (e.g., Prometheus, Grafana)
 
 ### Future Improvements
-- Implement CI/CD pipelines for feature branches.
+- Implement CI/CD pipelines for feature branches
 - Enhance Kubernetes deployment with Helm charts.
 - Integrate automated testing (unit, integration, E2E).
 
